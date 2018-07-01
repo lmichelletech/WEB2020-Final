@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        margin:0;
+        padding: 0;
+    }
+    #container{
+        display:flex;
+        flex-direction:row;
+        justify-content:center; 
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    .circle-wrap{
+        max-width: 400px;
+        min-width: 250px;
+        padding: 20px;
+        flex: 1;
+    }
+    .circle {
+        width: 50%;
+        height:0;
+        padding-bottom: 50%;
+        -moz-border-radius: 50%; 
+        -webkit-border-radius: 50%; 
+        border-radius: 50%;
+        background: #4679BD; 
+        margin: 0 auto;
+    }
+
+    /* Cleaner, but slightly less support: use "50%" as value */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="circle-wrap"><div class="circle"></div></div>
+        <div class="circle-wrap"><div class="circle"></div></div>
+    </div>
+</body>
+</html>
